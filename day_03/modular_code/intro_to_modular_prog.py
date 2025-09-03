@@ -23,8 +23,19 @@ height3 = 2
 print(f"Rectangle 3 area: {width3 + height3}")
 
 # Problem: What if you realize you wrote the wrong formula?
+the plus sign should be an aterisk
 # You’d have to go fix it in EVERY place.
+width1 = 5
+height1 = 10
+print(f"Rectangle 1 area: {width1 * height1}")
 
+width2 = 3
+height2 = 7
+print(f"Rectangle 2 area: {width2 * height2}")
+
+width3 = 9
+height3 = 2
+print(f"Rectangle 3 area: {width3 * height3}")
 # Task: Find the bug and make sure to fix it in every place.
 
 
@@ -53,10 +64,22 @@ print(f"Rectangle 2 area: {area_of_rectangle(3, 7)}")
 print(f"Rectangle 3 area: {area_of_rectangle(9, 2)}")
 
 # Challenge: Add a new function area_of_circle(radius) with proper docstring.
-
+import math'
+def area_of_circle(radius) -> float:
+    return radius * radius * math.pi
+def area_of_circle(radius: float) -> float:
+    ""
+    Calculate the area of a circle.
+    parameters
+    radius (float): the radius pf the circle
+    Returns
+    float: the area of the circle (pi * radius^2)
+    ""
+    return math.pi * (radius ** 2)
 
 # Example function WITHOUT a return value
 def print_welcome_message(student_name: str) -> None:
+    print("Hello")
     """
     Print a welcome message for a student.
 
