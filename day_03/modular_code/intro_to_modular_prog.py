@@ -46,7 +46,10 @@ print(f"Rectangle 3 area: {width3 * height3}")
 # You give it input values (called PARAMETERS),
 # and it can send back an output value (called a RETURN VALUE).
 
-def area_of_rectangle(width: int, height: int) -> int:
+def area_of_rectangle(width, height:) 
+    product = width * height
+    return product
+    print(f"{area_of_rectangle(6,3)}units squared")
     """
     Calculate the area of a rectangle.
 
@@ -65,9 +68,11 @@ print(f"Rectangle 3 area: {area_of_rectangle(9, 2)}")
 
 # Challenge: Add a new function area_of_circle(radius) with proper docstring.
 import math'
-def area_of_circle(radius) -> float:
+pi = 3.14
+def area_of_circle(radius) :
+    area : pi*(radius**2)
     return radius * radius * math.pi
-def area_of_circle(radius: float) -> float:
+def area_of_circle(radius: float)
     ""
     Calculate the area of a circle.
     parameters
