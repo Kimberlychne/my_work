@@ -9,7 +9,6 @@ class Restaurant:
         with open(data_path,'r') as file:
             restaurant_data = json.load(file)
 
-    while True:
         category = input("enter category (appetizer/entree/dessert):").lower().strip()
     if category in['appetizer,entree,dessert']:
 
