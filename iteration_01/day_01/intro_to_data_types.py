@@ -16,3 +16,12 @@ print("I have been at NMH for " + str(years_at_nmh) + "years") # need to "cast" 
 print(f"Hello, my name is {full_name}.")
 print(f"I am in the class of {year_of_graduation} and I have been at NMH for {years_at_nmh} years.")
 print(f" Some of my hobbies are {", ".join(hobbies)}. My favorite foods are {", ".join(favorite_foods)}")
+
+full_name = "kimberly"
+year_of_graduation = 2026
+years_at_nmh = 4
+hobbies = ["soccer", "snowboarding", "volleyball"]
+favorite_foods = ["sushie", "rice"]
+print(f"hello, my name is {full_name}.")
+print(f"I am in the class of {year_of_graduation}and I have been at nmh for {years_at_nmh}years.")
+print(f"some of my hobbies are {",".join(hobbies)}. My favorite foods are {",".join(favorite_foods)}")

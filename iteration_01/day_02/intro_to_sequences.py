@@ -144,7 +144,12 @@ print(f"{friend['name']} likes {friend['favorite_food']}")
 # --- Section 8: Reflection ---
 # Answer in comments:
 # 1. How is a list different from a dictionary?
+lists are ordered whereas dictionaries are unordered
 # 2. When would you want to use a dictionary instead of a list?
+use dictionary when representing objects like name and age rather than the numerical positions.
 # 3. Can you think of a real-world situation where combining lists and dictionaries would be useful?
+an instagram post
 # 4. What types of mistakes gave you the most errors today?
+type errors
 # 5. How might noticing errors actually help you learn?
+become more careful and aware

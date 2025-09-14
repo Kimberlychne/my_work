@@ -72,14 +72,8 @@ pi = 3.14
 def area_of_circle(radius) :
     area : pi*(radius**2)
     return radius * radius * math.pi
-def area_of_circle(radius: float)
-    ""
-    Calculate the area of a circle.
-    parameters
-    radius (float): the radius pf the circle
-    Returns
-    float: the area of the circle (pi * radius^2)
-    ""
+
+def area_of_circle(radius: float):
     return math.pi * (radius ** 2)
 
 # Example function WITHOUT a return value

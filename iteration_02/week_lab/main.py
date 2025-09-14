@@ -3,6 +3,8 @@ import restaurant
 import json
 
 
+#introduction
+
 #read a json file
 data_path = "iteration_02/week_lab/restaurant_data.json"
 
@@ -15,6 +17,9 @@ item_data = {
     "name":"New Item",
     "price":99.99
     }
+
+
+
 
 for category in restaurant_data["menu"]:
     print(category["category"])
@@ -32,3 +37,15 @@ for category in restaurant_data["menu"]:
 # restaurant = restaurant.Restaurant()
 # restaurant.add_item()
 # print(restaurant.lsit_items())
+
+#kevin's intro(not sure)#
+def main():
+    restaurant_data = load_json(FILE_PATH)
+    restaurant = Restaurant(restaurant_data)
+
+    restaurant.introduce_restaurant(restaurant_data)
+
+    for category in restaurant.menu:
+        print(f"catgeory is : {catgory["category"]}")
+        for item in category["items"]:
+         print(f"category is:{category["category"]}")

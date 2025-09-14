@@ -17,6 +17,9 @@ def main():
     for shape in shapes:
         shape.describe()
         are_cm2 = shape.area()
-
+#compare two shapes
+bigger = utils.larger_shape(shapes[0],shapes[1])
+print("between the first two shapes, the larger one is:")
+bigger.describe
 
 main()

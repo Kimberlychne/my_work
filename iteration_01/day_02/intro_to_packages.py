@@ -46,7 +46,8 @@ print(cmath.sqrt(-1))
 # ---------------------------------------------------
 
 # TODO: Ask for the user’s name and print a greeting
-print("welcome")
+name = input("plase type your name: ")
+print(f"welcome, {name}!")
 
 # ---------------------------------------------------
 # Level 4 – Converting Input to Numbers
@@ -55,7 +56,10 @@ print("welcome")
 # 2. Convert it to an integer
 # 3. Multiply it by 2 and print the result
 # ---------------------------------------------------
-
+number_str = input("please enter a number: ")
+number = int(number_str)
+result = number * 2
+print(f"double your number is {result}")
 # TODO: Ask for a number, convert it to int, double it, and print
 
 
@@ -66,7 +70,10 @@ print("welcome")
 # 2. Generate a random integer (-10 to 10) for the imaginary part
 # 3. Construct a complex number and print it
 # ---------------------------------------------------
-
+real_part = random.randint(2,10)
+imag_part = random.randint(2,10)
+complex_num = complex(real_part, imag_part)
+print(f"Random complex number: {complex_num}")
 # TODO: Generate a random complex number with integer real and imaginary parts
 
 
@@ -93,8 +100,21 @@ print("I have chosen a complex number with real and imaginary parts between -5 a
 # - Ask separately for real and imaginary guesses
 # - Convert inputs to integers
 # - Use if/else to give “too high” / “too low” feedback
+guess_real = int(input("guess the real paer (-5 to 5): "))
+guess_imag = int(input("guess the imaginary part (-5 to 5): "))
+print("please enter valid integers")
 
-
+if guess_real == target_real and guess_imag == target_imag:
+    print(f"congratulations! You guess correctly: {target}")
+    break
+    if guess_real < target_real:
+        print("Real part: Too low!")
+        elif guess_real > target_real:
+            print("Real part: Too high!")
+            else:
+                print("real part: Correct!")
+                print("imaginary part: Correct!")
+print("Try again!\n")    
 # ---------------------------------------------------
 # Extensions (Optional)
 # - Limit the number of guesses
