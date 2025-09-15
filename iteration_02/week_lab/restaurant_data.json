@@ -1,48 +1,124 @@
 {
-    "name": "Oriental Flavors",
-    "location": "45 River St, Springfield",
-    "cuisine": "Chinese",
-    "menu": [
-        {
-            "category": "Appetizer",
-            "id": 1,
-            "items": [
-                {"id": 1, "name": "Spring Rolls", "price": 5.99, "in_stock": true},
-                {"id": 2, "name": "Braised Pork Rice", "price": 7.49, "in_stock": true},
-                {"id": 3, "name": "Fried Tofu", "price": 6.49, "in_stock": true},
-                {"id": 4, "name": "Gua Bao", "price": 8.99, "in_stock": true},
-                {"id": 5, "name": "Fried Squid", "price": 7.99, "in_stock": true},
-                {"id": 6, "name": "Pig's blood cake", "price": 6.99, "in_stock": true},
-                {"id": 7, "name": "Cucumber salad", "price": 5.49, "in_stock": true},
-                {"id": 8, "name": "Tea eggs)", "price": 6.49, "in_stock": false}
-            ]
-        },
-        {
-            "category": "Entree",
-            "id": 2,
-            "items": [
-                {"id": 9, "name": "Braised Pork Belly", "price": 13.99, "in_stock": true},
-                {"id": 10, "name": "egg and tomato", "price": 14.49, "in_stock": true},
-                {"id": 11, "name": "sunflower seeds", "price": 15.49, "in_stock": true},
-                {"id": 12, "name": "Red Curry", "price": 15.49, "in_stock": true},
-                {"id": 13, "name": "Massaman Curry", "price": 16.99, "in_stock": true},
-                {"id": 14, "name": "Panang Curry", "price": 15.99, "in_stock": true},
-                {"id": 15, "name": "Thai Fried Rice", "price": 12.99, "in_stock": true},
-                {"id": 16, "name": "Basil Chicken (Pad Kra Pao)", "price": 14.99, "in_stock": true},
-                {"id": 17, "name": "Cashew Nut Chicken", "price": 15.49, "in_stock": true},
-                {"id": 18, "name": "Grilled Lemongrass Salmon", "price": 18.99, "in_stock": false},
-                {"id": 19, "name": "Pad See Ew", "price": 14.45, "in_stock": true}
-            ]
-        },
-        {
-            "category": "Dessert",
-            "id": 3,
-            "items": [
-                {"id": 20, "name": "Mango Sticky Rice", "price": 7.99, "in_stock": true},
-                {"id": 21, "name": "Fried Banana with Honey", "price": 6.49, "in_stock": true},
-                {"id": 22, "name": "Thai Coconut Ice Cream", "price": 5.99, "in_stock": true},
-                {"id": 23, "name": "Pumpkin Custard", "price": 6.99, "in_stock": false}
-            ]
-        }
-    ]
+  "items": [
+    {
+      "id": 1,
+      "name": "pizza",
+      "price": 11.0
+    },
+    {
+      "id": 2,
+      "name": "Braised Pork Rice",
+      "price": 7.49
+    },
+    {
+      "id": 3,
+      "name": "Fried Tofu",
+      "price": 6.49
+    },
+    {
+      "id": 4,
+      "name": "Gua Bao",
+      "price": 8.99
+    },
+    {
+      "id": 5,
+      "name": "Fried Squid",
+      "price": 7.99
+    },
+    {
+      "id": 6,
+      "name": "Pig's blood cake",
+      "price": 6.99
+    },
+    {
+      "id": 7,
+      "name": "Cucumber salad",
+      "price": 5.49
+    },
+    {
+      "id": 8,
+      "name": "Tea eggs",
+      "price": 6.49
+    },
+    {
+      "id": 9,
+      "name": "Braised Pork Belly",
+      "price": 13.99
+    },
+    {
+      "id": 10,
+      "name": "egg and tomato",
+      "price": 14.49
+    },
+    {
+      "id": 11,
+      "name": "sunflower seeds",
+      "price": 15.49
+    },
+    {
+      "id": 12,
+      "name": "Red Curry",
+      "price": 15.49
+    },
+    {
+      "id": 13,
+      "name": "Massaman Curry",
+      "price": 16.99
+    },
+    {
+      "id": 14,
+      "name": "Panang Curry",
+      "price": 15.99
+    },
+    {
+      "id": 15,
+      "name": "Thai Fried Rice",
+      "price": 12.99
+    },
+    {
+      "id": 16,
+      "name": "Basil Chicken (Pad Kra Pao)",
+      "price": 14.99
+    },
+    {
+      "id": 17,
+      "name": "Cashew Nut Chicken",
+      "price": 15.49
+    },
+    {
+      "id": 18,
+      "name": "Grilled Lemongrass Salmon",
+      "price": 18.99
+    },
+    {
+      "id": 19,
+      "name": "Pad See Ew",
+      "price": 14.45
+    },
+    {
+      "id": 20,
+      "name": "Mango Sticky Rice",
+      "price": 7.99
+    },
+    {
+      "id": 21,
+      "name": "Fried Banana with Honey",
+      "price": 6.49
+    },
+    {
+      "id": 22,
+      "name": "Thai Coconut Ice Cream",
+      "price": 5.99
+    },
+    {
+      "id": 23,
+      "name": "Pumpkin Custard",
+      "price": 6.99
+    },
+    {
+      "id": 24,
+      "name": "pizza",
+      "price": 3.0
+    }
+  ]
 }
