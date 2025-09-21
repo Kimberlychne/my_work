@@ -30,7 +30,7 @@ Video: [https://www.youtube.com/watch?v=mVnZVw4KJnc]
    ```bash
     git add .
     git commit -m "Some notes about your work today"
-    git push origin master
+    git push origin main
 
 # One-Time Setup (Students)
 
