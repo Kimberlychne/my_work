@@ -23,20 +23,28 @@ jokes = [
 @app.route("/")
 def home():
     html_content = """
-        <h1>Joke API</h1>
-        <p>Be sure to visit http://127.0.0.1:5000/api/joke for a funny joke!</p>
-        <p>Be sure to visit http://127.0.0.1:5000/api/jokes/2 for 2 funny jokes!</p>
+        <h1>Welcome to the Joke API server!</h1>
+        <p>Visit /api/joke to get a random joke!  http://127.0.0.1:5000/api/joke</p>
+        <p>Be sure to visit http://127.0.0.1:5000/api/jokes/3 for 3 random jokes!</p>
     """
     return html_content
 
 @app.route("/api/joke")
 def get_joke():
+    random_joke = random.choice
     return jsonify(random.choice(jokes))
 
 ###############################################################################
 # Now you need to add a route parameter! Think about how we can do this using #
 # our python logic after I show you how to insert a route parameter.          #
 ###############################################################################
+
+@app.route("/api/jokes/<int:n>")
+def get_jokes(n):
+    joke_list = []
+    for i in range(n):
+        joke_list.append(random.choice(jokes))
+    return jsonify(joke_list)
 
 if __name__ == "__main__":
     app.run()
