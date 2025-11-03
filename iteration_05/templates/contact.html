@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<h2>Contact Information</h2>
+
+<!-- Display contact methods using variables -->
+<p><strong>Email:</strong> {{ email }}</p>
+<p><strong>GitHub:</strong> {{ github }}</p>
+
+<!-- Conditional for missing phone number -->
+<p><strong>Phone:</strong> 
+    {% if phone %}
+        {{ phone }}
+    {% else %}
+        Phone number not available
+    {% endif %}
+</p>
+
+<!-- Additional contact information -->
+<p>Feel free to reach out to me through email, number, or check out my GitHub projects!</p>
+{% endblock %}
