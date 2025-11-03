@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<h2>About Me</h2>
+
+<!-- Using variable passed from Flask -->
+<p><strong>Name:</strong> {{ author }}</p>
+
+<!-- Paragraph about myself -->
+<p>
+    Hi, I'm Kimberly! I'm a student at NMH interested in Python programming. 
+    What excites me most about programming is building applications. I enjoy building
+    games and working on projects that challenge my problem-solving skills.
+</p>
+
+<!-- Conditional statement -->
+{% if is_student %}
+<p><strong>Status:</strong> Currently a student learning software development</p>
+{% else %}
+<p><strong>Status:</strong> Professional developer</p>
+{% endif %}
+
+<!-- Loop through interests -->
+<h3>My Technical Interests:</h3>
+<ul>
+    {% for interest in interests %}
+        <li>{{ interest }}</li>
+    {% endfor %}
+</ul>
+
+<!-- Using another variable -->
+<p><strong>Favorite Programming Language:</strong> {{ favorite_language }}</p>
+{% endblock %}
