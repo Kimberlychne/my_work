@@ -3,21 +3,29 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-<h2>Contact Information</h2>
+<h1 style="font-size: 2rem; font-weight: bold; color: #333;">Contact Information</h1>
 
-<!-- Display contact methods using variables -->
-<p><strong>Email:</strong> {{ email }}</p>
-<p><strong>GitHub:</strong> {{ github }}</p>
+<div style="display: flex; gap: 30px; margin-top: 20px;">
+    <div style="flex: 1;">
+        <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h2 style="color: #ec4899; font-size: 1.5rem;">Contact Details</h2>
+            <p><strong>Email:</strong> <a href="mailto:{{ email }}" class="pink-link">{{ email }}</a></p>
+            <p><strong>GitHub:</strong> <a href="{{ github }}" class="pink-link">{{ github }}</a></p>
+            <p><strong>Phone:</strong> 
+                {% if phone %}
+                    {{ phone }}
+                {% else %}
+                    Phone number not available
+                {% endif %}
+            </p>
+        </div>
+    </div>
 
-<!-- Conditional for missing phone number -->
-<p><strong>Phone:</strong> 
-    {% if phone %}
-        {{ phone }}
-    {% else %}
-        Phone number not available
-    {% endif %}
-</p>
-
-<!-- Additional contact information -->
-<p>Feel free to reach out to me through email, number, or check out my GitHub projects!</p>
+    <div style="flex: 1;">
+        <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h2 style="color: #ec4899; font-size: 1.5rem;">Get In Touch</h2>
+            <p>Feel free to reach out to me through email, phone, or check out my GitHub projects!</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
