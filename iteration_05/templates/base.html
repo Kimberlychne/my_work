@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
-<!-- Head tag contains metadata. Things that we don't see in the program like CSS links, Javascript imports if needed-->
 <head>
-    <!-- Title tag determines what ends up in browser tab -->
-    <!-- Since we want different pages, to have different titles, we use a jinja2 block -->
-    <!-- This means that templates which extend this one can replace the content of the title block with their own title.-->
-    <title> {% block title %}Flask UI{% endblock %} </title>
+    <title>{% block title %}My Page{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .pink-bg { background-color: #ec4899; }
+        .pink-text { color: #ec4899; }
+        .pink-button {
+            background-color: #ec4899;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .pink-button:hover { background-color: #db2777; }
+        .pink-link { color: #ec4899; }
+        .pink-link:hover { color: #db2777; text-decoration: underline; }
+    </style>
 </head>
 
-<!-- Body tag opens the main visible part of the webpage. Everything shown in the browser window lives inside here.-->
-<body>
-    <!-- Navigation bar because I want all my pages to have the ability to navigate between other routes -->
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/contact">Contact</a> |
-        <a href="/about">About</a>
+<body class="bg-gray-100">
+    <nav class="pink-bg p-4">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <a href="/" class="text-white mr-4 hover:text-pink-200">Home</a>
+            <a href="/about" class="text-white mr-4 hover:text-pink-200">About</a>
+            <a href="/contact" class="text-white hover:text-pink-200">Contact</a>
+        </div>
     </nav>
-    <hr> <!-- This creates a horizontal line -->
 
-    <!-- This is where child templates will insert content -->
-    {% block content %}{% endblock %}
+    <main style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+        {% block content %}{% endblock %}
+    </main>
 </body>
 </html>
